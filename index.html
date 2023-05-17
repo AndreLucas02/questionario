@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <main>
         <div class="container p-5">
             <div class="row">
@@ -21,79 +22,111 @@
                                 <h1 class="text-center">Questionário para Avaliação do Curso</h1>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-sm">
                                 <fieldset class="p-3">
-                            <label class=""><b> 1 - Qual é o seu nome?</b></label>
-                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome.."><br>
-        
-                            <label class=""><b>2 - Qual é o nome do curso que concluiu?</b></label>
-                            <input class="form-control" type="text" name="curso" placeholder="nome do curso.."><br>
-        
-                            <label> <b> 3 - Qual a carga horária do curso?</b></label>
-                            <input class="form-control" type="text" name="carga_horaria" placeholder="ex: 60h.."><br>
-        
-                            <label> <b> 4 - Qual o período do curso ? </b></label>
-                            <div class="row">
-                                <div class="col-2">
-                                    <select class="form-select my-2 p-2" name="periodo">
-                                        <option value="valor1">Manhã</option>
-                                        <option value="valor2">Tarde</option>
-                                        <option value="valor3">Noite</option>
-                                        <option value="valor4">EaD</option>
-                                    </select>
+                                    <label class=""><b>1 - Qual é o seu nome?</b></label>
+                                    <input class="form-control" type="text" name="nome"
+                                        placeholder="Digite seu nome.."><br>
+
+                                    <label class=""><b>2 - Qual é o nome do curso que concluiu?</b></label>
+                                    <input class="form-control" type="text" name="curso"
+                                        placeholder="nome do curso.."><br>
+
+                                    <label><b>3 - Qual a carga horária do curso?</b></label>
+                                    <input class="form-control" type="text" name="carga_horaria"
+                                        placeholder="ex: 60h.."><br>
+
+                                    <label><b>4 - Qual o período do curso?</b></label>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <select class="form-select my-2 p-2" name="periodo">
+                                                <option value="valor1">Manhã</option>
+                                                <option value="valor2">Tarde</option>
+                                                <option value="valor3">Noite</option>
+                                                <option value="valor4">EaD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <label><b>5 - Como você avalia o suporte oferecido pelo curso?</b></label><br>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="suporte" value="Excelente">
+                                        <label class="form-check-label">Excelente</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="suporte" value="Bom">
+                                        <label class="form-check-label">Bom</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="suporte" value="Regular">
+                                        <label class="form-check-label">Regular</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="suporte" value="Ruim">
+                                        <label class="form-check-label">Ruim</label>
+                                    </div>
+                                    <br>
+
+                                    <label><b>6 - O curso atendeu as suas expectativas?</b></label><br>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="expectativas" value="Sim">
+                                        <label class="form-check-label">Sim</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="expectativas" value="Não">
+                                        <label class="form-check-label">Não</label>
+                                    </div>
+                                    <br>
+
+                                    <label><b>7 - Você recomendaria este curso a outras pessoas?</b> </label><br>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recomendacao" value="Sim">
+                                        <label class="form-check-label">Sim</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recomendacao" value="Não">
+                                        <label class="form-check-label">Não</label>
+                                    </div>
+                                    <br>
+                                    <label><b>8 - O que você achou do ritmo do curso?</b></label><br>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ritmo" value="Muito rápido">
+                                        <label class="form-check-label">Rápido</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ritmo" value="Adequado">
+                                        <label class="form-check-label">Adequado</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ritmo" value="Lento">
+                                        <label class="form-check-label">Lento</label>
+                                    </div>
+                                    <br>
+
+                                    <label><b>9 - Qual foi a sua impressão geral do curso?</b></label>
+                                    <textarea class="form-control" name="impressao" rows="6" cols="50"
+                                        placeholder=""></textarea><br><br>
+
+                                    <label><b>10 - Você tem sugestão de melhorias no curso?</b></label>
+                                    <textarea class="form-control" name="sugestao" rows="6" cols="50"
+                                        placeholder="se sim, quais.."></textarea>
+                                    <br><br>
+
+                                    <label><b>11 - Você tem outra observação sobre o curso?</b></label>
+                                    <textarea class="form-control" name="observacao" rows="6" cols="50"
+                                        placeholder="não tenha medo, pode se expressar..."></textarea>
+                                    <br><br>
+                                </fieldset>
+
+                                <div class="d-grid">
+                                    <input class="btn btn-success mx-auto mx-4" type="submit" value="Enviar">
                                 </div>
                             </div>
-        
-                            <label> <b> 5 - Como você avalia o suporte oferecido pelo curso? </b></label><br>
-                            <input class="form-check-input" type="radio" name="suporte" value="Excelente">Excelente <br>
-                            <input class="form-check-input" type="radio" name="suporte" value="Bom">Bom <br>
-                            <input class="form-check-input" type="radio" name="suporte" value="Regular">Regular <br>
-                            <input class="form-check-input" type="radio" name="suporte" value="Ruim">Ruim
-                            <br><br>
-        
-                            <label> <b> 6 - O curso atendeu as suas expectativas? </b></label><br>
-                            <input class="form-check-input" type="radio" name="expectativas" value="Sim">Sim <br>
-                            <input class="form-check-input" type="radio" name="expectativas" value="Não">Não
-                            <br><br>
-        
-        
-                            <label> <b> 7 - Você recomendaria este curso a outras pessoas? </b></label><br>
-                            <input class="form-check-input" type="radio" name="recomendacao" value="Sim">Sim <br>
-                            <input class="form-check-input" type="radio" name="recomendacao" value="Não">Não
-                            <br><br>
-        
-                            <label> <b> 8 - O que você achou do ritmo do curso? </b></label><br>
-                            <input class="form-check-input" type="radio" name="ritmo" value="Muito rápido">Rápido<br>
-                            <input class="form-check-input" type="radio" name="ritmo" value="Adequado">Adequado <br>
-                            <input class="form-check-input" type="radio" name="ritmo" value="Lento">Lento <br>
-                            <br><br>
-        
-                            <label> <b> 9 - Qual foi a sua impressão geral do curso? </b></label>
-                            <textarea class="form-control" name="impressao" rows="6" cols="50" placeholder=""></textarea><br><br>
-        
-                            <label><b> 10 - Você tem sugestão de melhorias no curso?</b></label>
-                            <textarea class="form-control" name="sugestao" rows="6" cols="50" placeholder="se sim, quais.."></textarea>
-                            <br><br>
-        
-                            <label> <b>11 - Você tem outra observação sobre o curso? </b></label>
-                            <textarea class="form-control" name="observacao" rows="6" cols="50" placeholder="não tenha medo, pode se expressar..."></textarea>
-                            <br><br>
-                            </div>
                         </div>
-        
-                        
-        
-                            <div class="d-grid">
-                                <input class="btn btn-success mx-auto mx-4" type="submit" value="Enviar">
-                            </div>
-                        </fieldset>
                     </form>
                 </div>
             </div>
         </div>
     </main>
 </body>
-
-</html>
